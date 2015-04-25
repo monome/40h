@@ -1,1 +1,3 @@
-# 40h
+# 40h source
+
+hardware and firmware.

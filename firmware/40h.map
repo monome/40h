@@ -1,0 +1,494 @@
+Archive member included because of file (symbol)
+
+/usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+                              40h.o (__prologue_saves__)
+/usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+                              40h.o (__epilogue_restores__)
+/usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_copy_data.o)
+                              40h.o (__do_copy_data)
+/usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+                              40h.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+button_last         0x8               button.o
+button_debounce_count
+                    0x40              button.o
+gAdcFilters         0xa0              adc.o
+button_state        0x8               button.o
+button_current      0x8               button.o
+button_event        0x8               button.o
+
+Discarded input sections
+
+ .stabstr       0x00000000        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+ .stabstr       0x00000000        0x0 40h.o
+ .stabstr       0x00000000        0x0 adc.o
+ .stabstr       0x00000000        0x0 message.o
+ .stabstr       0x00000000        0x0 button.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+LOAD 40h.o
+LOAD adc.o
+LOAD message.o
+LOAD button.o
+LOAD /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a
+LOAD /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a
+LOAD /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xbbe
+ *(.vectors)
+ .vectors       0x00000000       0x54 /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+ *(.init0)
+ .init0         0x00000054        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x4 /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008a        0x4 /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+                0x0000008a                __vector_1
+                0x0000008a                __vector_12
+                0x0000008a                __bad_interrupt
+                0x0000008a                __vector_6
+                0x0000008a                __vector_3
+                0x0000008a                __vector_13
+                0x0000008a                __vector_17
+                0x0000008a                __vector_19
+                0x0000008a                __vector_7
+                0x0000008a                __vector_5
+                0x0000008a                __vector_4
+                0x0000008a                __vector_9
+                0x0000008a                __vector_2
+                0x0000008a                __vector_15
+                0x0000008a                __vector_8
+                0x0000008a                __vector_14
+                0x0000008a                __vector_10
+                0x0000008a                __vector_18
+                0x0000008a                __vector_20
+ .text          0x0000008e      0x6da 40h.o
+                0x0000008e                output_pin
+                0x00000190                input_pin
+                0x000001fe                spi_led
+                0x00000210                main
+ .text          0x00000768      0x20e adc.o
+                0x00000796                initAdcFilters
+                0x00000768                disableAdcs
+                0x000007d4                initAdcs
+                0x000008f2                __vector_11
+                0x000008c2                disableAdc
+                0x0000088c                enableAdc
+                0x00000778                hardInitAdcs
+                0x000007de                adcAddNextValue
+                0x000008f4                __vector_16
+ .text          0x00000976       0xa2 message.o
+                0x000009be                messagePackLedTest
+                0x000009b4                messagePackLedIntensity
+                0x00000a0c                messagePackLedCol
+                0x000009ee                messagePackShutdown
+                0x00000976                messagePackButtonPress
+                0x0000098c                messagePackAdcVal
+                0x00000a00                messagePackLedRow
+                0x000009a4                messagePackLedStateChange
+                0x000009d0                messagePackAdcEnable
+ .text          0x00000a18      0x138 button.o
+                0x00000a4a                buttonCheck
+                0x00000a18                buttonInit
+ .text          0x00000b50        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+ .text          0x00000b50        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+ .text          0x00000b50        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000b50        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+                0x00000b50                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000b50       0x38 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+                0x00000b50                __prologue_saves__
+ .text.libgcc   0x00000b88       0x36 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+                0x00000b88                __epilogue_restores__
+ .text.libgcc   0x00000bbe        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000bbe        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+                0x00000bbe                . = ALIGN (0x2)
+ *(.fini9)
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ *(.fini0)
+                0x00000bbe                _etext = .
+
+.data           0x00800060        0x0 load address 0x00000bbe
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 40h.o
+ .data          0x00800060        0x0 adc.o
+ .data          0x00800060        0x0 message.o
+ .data          0x00800060        0x0 button.o
+ .data          0x00800060        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+ .data          0x00800060        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+ .data          0x00800060        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060      0x102
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 40h.o
+ .bss           0x00800060        0x2 adc.o
+                0x00800060                gAdcEnableState
+ .bss           0x00800062        0x0 message.o
+ .bss           0x00800062        0x0 button.o
+ .bss           0x00800062        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+ .bss           0x00800062        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+ .bss           0x00800062        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00800062        0x0 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800062       0xa0 adc.o
+                0x00800062                gAdcFilters
+ COMMON         0x00800102       0x60 button.o
+                0x00800102                button_last
+                0x0080010a                button_debounce_count
+                0x0080014a                button_state
+                0x00800152                button_current
+                0x0080015a                button_event
+                0x00800162                PROVIDE (__bss_end, .)
+                0x00000bbe                __data_load_start = LOADADDR (.data)
+                0x00000bbe                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800162        0x0
+                0x00800162                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800162                PROVIDE (__noinit_end, .)
+                0x00800162                _end = .
+                0x00800162                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.stab           0x00000000     0x1e90
+ *(.stab)
+ .stab          0x00000000      0x36c /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+ .stab          0x0000036c      0xd08 40h.o
+                                0xd14 (size before relaxing)
+ .stab          0x00001074      0x624 adc.o
+                                0x864 (size before relaxing)
+ .stab          0x00001698      0x564 message.o
+                                0x78c (size before relaxing)
+ .stab          0x00001bfc      0x294 button.o
+                                0x48c (size before relaxing)
+
+.stabstr        0x00000000     0x1259
+ *(.stabstr)
+ .stabstr       0x00000000     0x1259 /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(40h.elf elf32-avr)
+
+Cross Reference Table
+
+Symbol                                            File
+__bad_interrupt                                   /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__bss_end                                         /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+                                                  button.o
+                                                  message.o
+                                                  adc.o
+                                                  40h.o
+__do_copy_data                                    /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_copy_data.o)
+                                                  button.o
+                                                  message.o
+                                                  adc.o
+                                                  40h.o
+__epilogue_restores__                             /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+                                                  40h.o
+__heap_end                                        /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__init                                            /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__prologue_saves__                                /usr/local/avr/lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+                                                  40h.o
+__stack                                           /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+                                                  40h.o
+__vector_1                                        /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_10                                       /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_11                                       adc.o
+                                                  /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_12                                       /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_13                                       /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_14                                       /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_15                                       /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_16                                       adc.o
+                                                  /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_17                                       /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_18                                       /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_19                                       /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_2                                        /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_20                                       /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_3                                        /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_4                                        /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_5                                        /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_6                                        /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_7                                        /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_8                                        /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_9                                        /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vector_default                                  /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+__vectors                                         /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+adcAddNextValue                                   adc.o
+buttonCheck                                       button.o
+                                                  40h.o
+buttonInit                                        button.o
+                                                  40h.o
+button_current                                    button.o
+                                                  40h.o
+button_debounce_count                             button.o
+button_event                                      button.o
+                                                  40h.o
+button_last                                       button.o
+                                                  40h.o
+button_state                                      button.o
+                                                  40h.o
+disableAdc                                        adc.o
+                                                  40h.o
+disableAdcs                                       adc.o
+enableAdc                                         adc.o
+                                                  40h.o
+gAdcEnableState                                   adc.o
+gAdcFilters                                       adc.o
+                                                  40h.o
+hardInitAdcs                                      adc.o
+initAdcFilters                                    adc.o
+initAdcs                                          adc.o
+input_pin                                         40h.o
+main                                              40h.o
+                                                  /usr/local/avr/lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm32.o
+messagePackAdcEnable                              message.o
+messagePackAdcVal                                 message.o
+                                                  40h.o
+messagePackButtonPress                            message.o
+                                                  40h.o
+messagePackLedCol                                 message.o
+messagePackLedIntensity                           message.o
+messagePackLedRow                                 message.o
+messagePackLedStateChange                         message.o
+messagePackLedTest                                message.o
+messagePackShutdown                               message.o
+output_pin                                        40h.o
+spi_led                                           40h.o
